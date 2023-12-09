@@ -1,0 +1,78 @@
+import './Assets/css/style.css'
+import nav from './components/nav.js'
+
+function App()
+{
+    return(
+
+    //     <div>
+    //         <form class="container" onsubmit="return register()">
+    //     {/* <div class="waviy">
+    //         <span style="--i:1">L</span>
+    //         <span style="--i:2">O</span>
+    //         <span style="--i:3">G</span>
+    //         <span style="--i:4">I</span>
+    //         <span style="--i:5">N</span>
+    //     </div> */}
+    //     <input type="email" name="email" id="e-mail" placeholder=" username or e-mail" class="fields" required/>
+    //     <input type="password" name="password" id="pswd" placeholder="Password" class="fields" required/>
+    //     <input type="submit" name="submit" class="submit" required/>
+    // </form>
+    //     </div>
+
+
+    <div>
+         <h2>Login/Signup Form</h2>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Create Account</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="ri-google-fill"></i></a>
+          <a href="#" class="social"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+        <span>or use your email for registration</span>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Sign Up</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="ri-google-fill"></i></a>
+          <a href="#" class="social"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+        <span>or use your account</span>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <a href="#">Forgot your password?</a>
+        <button>Sign In</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your details and start your journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+        
+
+    )
+}
+
+export default App

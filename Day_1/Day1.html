@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Day1.css">
+</head>
+<body>
+
+    <form class="container" onsubmit="register()">
+        <i class="ri-user-fill"></i>
+        <input type="text" name = "Name" id ="uname" placeholder="Name" class="fields" required>
+
+        <input type="email" name = "email" id="e-mail" placeholder="e-mail" class="fields" required>
+        <input type="password" name = "password" id="pswd" placeholder="Password" class="fields" required>
+        <input type="password" name = "confirmpswd" id="cnfrmpswd" placeholder="Confirm Password" class="fields" required>
+        <input type="number" name = "Age" placeholder="Age" class="fields" required>
+        <input type="date" name = "DOB" placeholder="DOB" class="fields" required>
+        <input type="tel" name = "PhoneNumber" placeholder="Phone" class="fields" required>
+        <input type="text" name = "Address" placeholder="Address" class="fields" required>
+        <input type="submit" name = "submit" class="submit" required>
+    </form>
+
+    
+</body>
+
+<script>
+    function register() {
+        let name = document.getElementById("uname").value;
+        let pswd = document.getElementById("pswd").value;
+        let cpswd = document.getElementById("cnfrmpswd").value;
+
+        if (confirm("Are you sure?")) {
+            if (pswd === cpswd) {
+                alert("Registration Successful!");
+            } else {
+                alert("Incorrect Password");
+            }
+        } else {
+            alert("Failed");
+        }
+    }
+</script>
+
+</html>

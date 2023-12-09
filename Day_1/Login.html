@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    
+    <form class="container" onsubmit="return register()">
+        <div class="waviy">
+            <span style="--i:1">L</span>
+            <span style="--i:2">O</span>
+            <span style="--i:3">G</span>
+            <span style="--i:4">I</span>
+            <span style="--i:5">N</span>
+        </div>
+        <input type="email" name="email" id="e-mail" placeholder=" username or e-mail" class="fields" required>
+        <input type="password" name="password" id="pswd" placeholder="Password" class="fields" required>
+        <input type="submit" name="submit" class="submit" required>
+    </form>
+
+    <script>
+        function register() {
+            let email = document.getElementById("e-mail").value;
+            let pswd = document.getElementById("pswd").value;
+            let check = "Vaish1194";
+
+            if (confirm("Are you sure?")) {
+                if (pswd === check) {
+                    alert("Registration Successful!");
+                    return true;
+                } else {
+                    alert("Incorrect Password");
+                    return false;
+                }
+            } else {
+                alert("Failed");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>

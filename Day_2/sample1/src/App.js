@@ -1,26 +1,8 @@
 import './Assets/css/style.css'
-import nav from './components/nav.js'
 
-function App()
+function App() 
 {
     return(
-
-    //     <div>
-    //         <form class="container" onsubmit="return register()">
-    //     {/* <div class="waviy">
-    //         <span style="--i:1">L</span>
-    //         <span style="--i:2">O</span>
-    //         <span style="--i:3">G</span>
-    //         <span style="--i:4">I</span>
-    //         <span style="--i:5">N</span>
-    //     </div> */}
-    //     <input type="email" name="email" id="e-mail" placeholder=" username or e-mail" class="fields" required/>
-    //     <input type="password" name="password" id="pswd" placeholder="Password" class="fields" required/>
-    //     <input type="submit" name="submit" class="submit" required/>
-    // </form>
-    //     </div>
-
-
     <div>
          <h2>Login/Signup Form</h2>
   <div class="container" id="container">
@@ -70,8 +52,6 @@ function App()
     </div>
   </div>
     </div>
-        
-
     )
 }
 

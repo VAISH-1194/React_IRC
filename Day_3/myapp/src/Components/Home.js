@@ -1,218 +1,97 @@
+
 function Home()
 {
     return(
         <> 
-            <header class="section__container header__container">
-        <div class="header__content">
-            <span class="bg__blur"></span>
-            <span class="bg__blur header__blur"></span>
-            <h4>IMMERSE IN CREATIVE WORLDS</h4>
-            <h1><span>CRAFT</span> YOUR CREATIVE WORLD</h1>
-            <p>
-                "Unlock Your Artistic Journey and Join 'Paint Your Dreams' to Unleash Your Creative Potential. Experience the Astonishing Transformation of Your Art!"
-            </p>
-            <button class="btn"><b>Get Started</b></button>
+            <section class="hero-section">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+         
+          </div>
+          <div class="carousel-slide">
+          
+          </div>
+          <div class="carousel-slide">
+            
+          </div>
+          <div class="carousel-slide">
+            
+          </div>
+          <div class="carousel-slide">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b8e07ff39439d998.jpg?q=20"/>
+          </div>
         </div>
-        <div class="header__image">
-            <img src="side pic.png" alt="header" />
-        </div>
-    </header>
+      </section>
 
-    <section class="section__container explore__container">
-        <div class="explore__header">
-            <h2 class="section__header">EXPLORE OUR PROGRAM</h2>
-            <div class="explore__nav">
-                <span><i class="ri-arrow-left-line"></i></span>
-                <span><i class="ri-arrow-right-line"></i></span>
-            </div>
-        </div>
-        <div class="explore__grid">
-            <div class="explore__card">
-                <span><i class="ri-magic-fill"></i></span>
-                <h4>Diverse Mediums</h4>
-                <p>
-                    The art club will support and encourage a variety of artistic mediums, such as painting, drawing, sculpture, digital art, photography, and more, to cater to a wide range of artistic interests.
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="explore__card">
-                <span><i class="ri-group-fill"></i></span>
-                <h4>Inclusive Membership</h4>
-                <p>
-                    The club will be open to artists of all skill levels, from beginners to experienced artists, fostering an inclusive and supportive creative community.
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="explore__card">
-                <span><i class="ri-presentation-fill"></i></span>
-                <h4>Regular Workshops and Critiques</h4>
-                <p>
-                    To help members improve their skills, the club will offer regular workshops, art-related events, and constructive critiques where artists can receive feedback on their work.
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="explore__card">
-                <span><i class="ri-shopping-basket-fill"></i></span>
-                <h4>Exhibition Opportunities</h4>
-                <p>
-                    The club will provide chances for members to showcase their art, whether through gallery exhibitions, art fairs, or online platforms, allowing artists to share their creations with a broader audience.
-                </p>
-                <a href="#"> Join Now<i class="ri-arrow-right-line">
-                        </i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section__container class__container">
-        <div class="class__image">
-            <span class="bg__blur"></span>
-            <img src="https://patch.com/img/cdn/users/1591706/2012/08/raw/526fd3238ac3b18817f4fb622944d5bf.jpg" alt="class" class="class__img-1" />
-            <img src="https://images.squarespace-cdn.com/content/v1/591f5c138419c2b7303aee27/1564162724372-PZC05BOI9NTS2JPP3BJL/31906312894_d9dd320536_k.jpg?format=1500w" alt="class" class="class__img-2" />
-        </div>
-        <div class="class__content">
-            <h2 class="section__header">THE CLASS YOU WILL GET HERE</h2>
-            <p>
-                "Unleash Your Creativity with 'The Artistic Experience' led by our team of inspiring and accomplished instructors. This high-energy session combines a perfect blend of art techniques, creative exploration, and hands-on projects. Each session is thoughtfully
-                designed to keep you engaged and inspired, ensuring you continually evolve in your artistic journey."
-            </p>
-            <button class="btn">Book A Class</button>
-        </div>
-    </section>
-
-    <section class="section__container price__container">
-        <h2 class="section__header">OUR PRICING PLAN</h2>
-        <p class="section__subheader">
-            "Our membership options are designed to cater to various artistic preferences and creative aspirations, offering a range of tiers to suit every artist's needs."
-        </p>
-        <div class="price__grid">
-            <div class="price__card">
-                <div class="price__card__content">
-                    <h4>Basic Artistic Membership</h4>
-                    <h3>₹1,500/month</h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> Access to a variety of artistic mediums.
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> Weekly creative workshops and artist meetups.
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> Exclusive invitations to art exhibitions.
-                    </p>
-                </div>
-                <button class="btn price__btn">Join Now</button>
-            </div>
-            <div class="price__card">
-                <div class="price__card__content">
-                    <h4>Premium Artistic Membership</h4>
-                    <h3>₹3,000/month</h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> All features of the Basic Artistic Membership.
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> Additional access to premium art supplies and studio space.
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> Priority registration for advanced art classes.
-                    </p>
-                </div>
-                <button class="btn price__btn">Join Now</button>
-            </div>
-            <div class="price__card">
-                <div class="price__card__content">
-                    <h4>Artistic Mastery Membership </h4>
-                    <h3>₹5,000/month</h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> All features of the Premium Artistic Membership.
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> One-on-one mentoring sessions with renowned artists.
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> VIP access to art gallery openings and networking events.
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> Exclusive opportunities for solo exhibitions and artist residencies.
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i> Complimentary art tools and supplies.
-                    </p>
-                </div>
-                <button class="btn price__btn">Join Now</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="review">
-        <div class="section__container review__container">
-            <span><i class="ri-double-quotes-r"></i></span>
-            <div class="review__content">
-                <h4>MEMBER REVIEW</h4>
-                <p>
-                    "Being a part of this art club has truly transformed my creative experience. It's a vibrant community of artists where inspiration knows no bounds."
-                </p>
-                <div class="review__rating">
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-fill"></i></span>
-                    <span><i class="ri-star-half-fill"></i></span>
-                </div>
-                <div class="review__footer">
-                    <div class="review__member">
-                        <img src="profile.jpg" alt="member" />
-                        <div class="review__member__details">
-                            <h4>Surya Prakash</h4>
-                            <p>Web Developer</p>
-                        </div>
-                    </div>
-                    <div class="review__nav">
-                        <span><i class="ri-arrow-left-line"></i></span>
-                        <span><i class="ri-arrow-right-line"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="section__container footer__container">
-        <span class="bg__blur"></span>
-        <span class="bg__blur footer__blur"></span>
-        <div class="footer__col">
-            <div class="footer__logo"><img src="header logo.png" alt="logo" /></div>
-            <p>
-                "Unlock Your Artistic Potential with Our Exclusive Membership Offers. Let's Craft, Innovate, and Thrive Together!"
-            </p>
-            <div class="footer__socials">
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-            </div>
-        </div>
-        <div class="footer__col">
-            <h4>Company</h4>
-            <a href="#">Business</a>
-            <a href="#">Franchise</a>
-            <a href="#">Partnership</a>
-            <a href="#">Network</a>
-        </div>
-        <div class="footer__col">
-            <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Security</a>
-            <a href="#">Careers</a>
-        </div>
-        <div class="footer__col">
-            <h4>Contact</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Artistry Kit</a>
-        </div>
-    </footer>
-    <div class="footer__bar">
-        Copyright © 2023 Artistry Club. All rights reserved.
+<section class="shop-section">
+  <div class="shop-images">
+    <div class="shop-link">
+      <h3>Shop Laptops</h3>
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSx0MrcQyaGvERwNXD9hIunHS7TNj2mhNOwNa6tfVcx3PtDPGAQYJLbqqZssgKKueRlmOAVeRn5XqYmQHS28phONbhdukbxHD1PhVin9kM&usqp=CAE" alt="card"/>
+      <a href="#">Shop now</a>
     </div>
+    <div class="shop-link">
+      <h3>Shop Smartwatches</h3>
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRliKgTrl6ZjLNAFRSUMYEQ1DjV6xOh5ExF2hNk9wavxRBINYRU4HIR7_cML312peRUa44WjgvzeOF5jVecXWqDn8gG-fqVc54bQ1VYtg&usqp=CAE" alt="card"/>
+      <a href="#">Shop now</a>
+    </div>
+    <div class="shop-link">
+      <h3>Mobile Phones</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRX4NIcmP0tT6eKnPgAeQkbFosT0hpx3rLVkG1VW_c1caY7ciEjq3fLPXRXQ9MVcUHhLjH6uvlHsfIGm1e83YbbSfrJIBCyDdPp1wGCAhZFpckRVaOZQrgwWg&usqp=CAE" alt="card"/>
+      <a href="#">Shop now</a>
+    </div>
+    <div class="shop-link">
+  <h3>Tablets</h3>
+  <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRFAb_D8_MNvwxv4WhD4lH03UxDg2oThDKxnt0faeSRXFnJheuwSWP2wcaunFPSnYO1vR2CiY9pFW6wAiD-dN77Brkvn8JvLIXo8R90aFAszc_RTnsdMCEDIw&usqp=CAE" alt="card" />
+  <a href="#">Shop now</a>
+</div>
+  </div>
+</section>
+
+<footer>
+  <a href="#" class="footer-title">
+    Back to top
+  </a>
+  <div class="footer-items">
+    <ul>
+      <h3>Get to Know Us</h3>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Press Release</a></li>
+      <li><a href="#">Nile Science</a></li>
+    </ul>
+    <ul>
+      <h3>Connect with Us</h3>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+    <ul>
+      <h3>Make Money with Us</h3>
+      <li><a href="#">Sell on Nile</a></li>
+      <li><a href="#">Sell under Nile Accelerator</a></li>
+      <li><a href="#">Protect and Build Your Brand</a></li>
+      <li><a href="#">Nile Global Selling</a></li>
+      <li><a href="#">Become an Affiliate</a></li>
+      <li><a href="#">Fulfillment by Nile</a></li>
+      <li><a href="#">Advertise Your Products</a></li>
+      <li><a href="#">Nile Pay on Merchants</a></li>
+    </ul>
+    <ul>
+      <h3>Let Us Help You</h3>
+      <li><a href="#">COVID-19 and Nile</a></li>
+      <li><a href="#">Your Account</a></li>
+      <li><a href="#">Return Centre</a></li>
+      <li><a href="#">100% Purchase Protection</a></li>
+      <li><a href="#">Nile App Download</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </div>
+    <div class ="Footer">
+        <h4><b>Copyright © Vaishnavi M - Founder of Nile. All rights reserved.</b></h4>
+    </div>
+</footer>
+    
         </>
     )
 }

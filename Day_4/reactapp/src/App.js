@@ -1,14 +1,14 @@
 import React from 'react';
-import ChildProp from './Component/ChildProp';
-import ParentProp from './Component/ParentProp';
-import StateEx from './Component/StateEx'; 
+import Login from './Component/Login'; 
+import login from './Assets/CSS/login.css';
+import TempComp from './Component/TempComp';
 
 function App() {
   return (
     <>
-      <ChildProp/>
-      <ParentProp/>
-      <StateEx/>
+     
+      <TempComp/>
+
     </>
   );
 }

@@ -35,6 +35,7 @@ function Nav() {
             {/* header2 */}
 
         <div class="header_two">
+            
             <div class="navbar">
                 <Link to='/'>
                     <a href="home">Home</a>

@@ -7,6 +7,7 @@ function Blog() {
         <div class="swiper blog-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
+                    
                     <div class="image">
                         <img src="./image/blog-1.jpg" alt=""/>
                     </div>

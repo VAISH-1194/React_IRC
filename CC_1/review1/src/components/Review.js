@@ -9,6 +9,7 @@ function Review() {
 
                 <div class="swiper-slide box">
                     <img src="./image/pic-1.png" alt=""/>
+                    
                     <h3>john deo</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.

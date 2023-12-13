@@ -9,6 +9,7 @@ function Arrival() {
                         <div class="image">
                             <img src="./image/book-1.png" alt=""/>
                         </div>
+                        
                         <div class="content">
                             <h3>new arrivals</h3>
                             <div class="price">$15.99 <span>$20.99</span></div>

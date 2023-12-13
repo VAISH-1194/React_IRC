@@ -21,6 +21,7 @@ function SignUp() {
     // } else {
     //   alert('Invalid username or password. Please check your credentials.');
     // }
+    
   };
 
   return (

@@ -11,6 +11,7 @@ function Feature() {
                 <div class="heading"><span>featured books</span></div>
 
                 <div class="swiper featured-slider">
+                    
                     <div class="swiper-wrapper">
                         <div class="swiper-slide box">
                             <div class="icons">

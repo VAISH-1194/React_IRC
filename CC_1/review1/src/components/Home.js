@@ -8,6 +8,7 @@ function Home() {
 
 
          <section class="home" id="home">
+            
         <div class="row">
             <div class="content">
                 <h3>upto 55% offers</h3>

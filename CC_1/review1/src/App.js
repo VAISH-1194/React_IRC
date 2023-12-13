@@ -16,6 +16,7 @@ import SignUp from "./components/SignUp"
 
 import whole from "./Assets/CSS/whole.css"
 
+
 import { Route, Routes} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 

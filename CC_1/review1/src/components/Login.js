@@ -19,7 +19,9 @@ function Login() {
     if (email === 'vaish1194@gmail.com' && password === '12345') {
       window.alert('Login successful!');
       setLoginFormVisible(false); 
-    } else {
+    } 
+    
+    else {
       alert('Invalid username or password. Please check your credentials.');
     }
   };

@@ -6,9 +6,7 @@ import TempComp from './Component/TempComp';
 function App() {
   return (
     <>
-     
       <TempComp/>
-
     </>
   );
 }

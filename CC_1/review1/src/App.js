@@ -1,18 +1,18 @@
-import Nav from "./components/Nav"
+import Nav from "./Components/Nav"
 
-import Home from "./components/Home"
+import Home from "./Components/Home"
 
-import Feature from "./components/Feature"
+import Feature from "./Components/Feature"
 
-import Arrival from "./components/Arrival"
+import Arrival from "./Components/Arrival"
 
-import Review from "./components/Review"
+import Review from "./Components/Review"
 
-import Blog from "./components/Blog"
+import Blog from "./Components/Blog"
 
-import Login from "./components/Login"
+import Login from "./Components/Login"
 
-import SignUp from "./components/SignUp"
+import SignUp from "./Components/SignUp"
 
 import whole from "./Assets/CSS/whole.css"
 

@@ -246,7 +246,8 @@ html::-webkit-scrollbar-thumb{
 
 
 .bottom-navbar{
-    text-align: center;
+    text-align: center; 
+
     background: var(--blue);
     position: fixed;
     bottom: 0;

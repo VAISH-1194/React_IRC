@@ -45,6 +45,7 @@
 
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './Components/Login';
 import Nav from './Components/Nav';
 import Home from './Components/Home';
 import Sidebar from './Components/Sidebar';
@@ -64,7 +65,8 @@ function App() {
       <Routes>
     <Route>
         <Route path="/" element={<Home />} />
-        {/* Add other routes as needed */}
+        <Route path="/login" element={<Login />} />
+        
     </Route>
       </Routes>
     </>

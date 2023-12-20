@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 
 function Login() {
@@ -17,12 +18,31 @@ function Login() {
 
     
     if (email === 'vaish1194@gmail.com' && password === '12345') {
-      window.alert('Login successful!');
+      toast.success('🦄 Wow so easy!', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+        
       setLoginFormVisible(false); 
     } 
     
     else {
-      alert('Invalid username or password. Please check your credentials.');
+      toast.error('🦄 Wow so easy!', {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
     }
   };
 
@@ -73,6 +93,20 @@ function Login() {
           </form>
         </div>
       )}
+
+      <ToastContainer
+      position="bottom-right"
+      autoClose={3000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="dark"
+      />
+
     </>
   );
 }

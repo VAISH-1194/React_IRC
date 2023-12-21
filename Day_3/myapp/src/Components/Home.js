@@ -91,7 +91,7 @@ function Home()
         <h4><b>Copyright © Vaishnavi M - Founder of Nile. All rights reserved.</b></h4>
     </div>
 </footer>
-    
+      
         </>
     )
 }

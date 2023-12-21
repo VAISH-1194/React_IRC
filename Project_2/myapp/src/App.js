@@ -6,7 +6,8 @@ import Product from './Pages/Product.js';
 import Navbar from './Components/Navbar.jsx';
 import Home from './Pages/Home.js';
 import Login from './Pages/Login.js';
-import TopOffers from './Pages/TopOffers.js';
+import Features from './Pages/Featured.js';
+import NewArrival from './Pages/NewArrival.jsx';
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
       <Sidebar>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/topoffers" element={<TopOffers />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/newarrival" element={<NewArrival />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/product" element={<Product />} />

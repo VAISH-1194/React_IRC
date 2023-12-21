@@ -7,7 +7,7 @@ function Navbar({ onSidebarToggle }) {
     <>
       <header className="header">
         <div className="header_one">
-          <a href="" className="logo">
+          <a href="" className="logomain">
             <i className="fas fa-book" style={{ marginLeft: 1 }}>YEHDU++</i>
           </a>
           <form action="" className="search-form">
@@ -34,8 +34,8 @@ function Navbar({ onSidebarToggle }) {
             <Link to = '/newarrival'>
             <a href="newarrival">New Arrival</a>
             </Link>
-            <Link to='/featured'>
-              <a href="featured">Featured</a>
+            <Link to='/features'>
+              <a href="features">Features</a>
             </Link>
             <Link to='/topoffers'>
             <a href="topoffers">Top Offers</a>

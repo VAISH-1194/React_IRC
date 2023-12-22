@@ -1,9 +1,0 @@
-.content {
-    transition: margin-left 0.3s;
-    padding: 16px;
-  }
-  
-  .sidebar-open {
-    margin-left: 250px; /* Adjust the width of the sidebar as needed */
-  }
-  

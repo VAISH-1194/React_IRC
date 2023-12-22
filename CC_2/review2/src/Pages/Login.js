@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,9 +15,8 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    
     if (email === 'vaish1194@gmail.com' && password === '12345') {
-      toast.success('🦄 Wow so easy!', {
+      toast.success('🥳 Login SuccessFul!', {
         position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -26,14 +24,12 @@ function Login() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
-        });
-        
-      setLoginFormVisible(false); 
-    } 
-    
-    else {
-      toast.error('🦄 Wow so easy!', {
+        theme: "dark",
+      });
+
+      setLoginFormVisible(false);
+    } else {
+      toast.error('💀 Enter Valid Email or Password!', {
         position: "bottom-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -42,7 +38,7 @@ function Login() {
         draggable: true,
         progress: undefined,
         theme: "dark",
-        });
+      });
     }
   };
 
@@ -50,11 +46,13 @@ function Login() {
     <>
       {isLoginFormVisible && (
         <div className="login-form-container" id="login">
-          <div
-            id="close-login-btn"
-            className="fas fa-times"
-            onClick={handleCloseButtonClick}
-          ></div>
+          <Link to="/">
+            <div
+              id="close-login-btn"
+              className="fas fa-times"
+              onClick={handleCloseButtonClick}
+            ></div>
+          </Link>
 
           <form onSubmit={handleSubmit}>
             <h3>sign in</h3>
@@ -64,8 +62,8 @@ function Login() {
               className="box"
               placeholder="enter your email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}/>
-
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
             <span>password</span>
             <input
@@ -73,7 +71,8 @@ function Login() {
               className="box"
               placeholder="enter your password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}/>
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
             <div className="check-box">
               <input type="checkbox" id="remember-me" />
@@ -86,27 +85,26 @@ function Login() {
             </p>
 
             <Link to='/login'>
-                <p>
-                  don't have an account ? <a href="">SignUp</a>
-                </p>
+              <p>
+                don't have an account ? <a href="">SignUp</a>
+              </p>
             </Link>
           </form>
         </div>
       )}
 
       <ToastContainer
-      position="bottom-right"
-      autoClose={3000}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover
-      theme="dark"
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
       />
-
     </>
   );
 }

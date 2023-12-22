@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../Assets/CSS/content.css";
 
-function Nav({ onSidebarToggle }) {
+function Navbar({ onSidebarToggle }) {
   return (
     <>
       <header className="header">
         <div className="header_one">
-        <div id="sidebar" className="fa-solid fa-bars" style={{ marginLeft: 0 }} onClick={onSidebarToggle}></div>
-          <a href="" className="logo">
-            <i className="fas fa-book" style={{ marginLeft: 1 }}>RBLY</i>
+          <a href="" className="logomain">
+            <i className="fas fa-book" style={{ marginLeft: 1 }}>YEHDU++</i>
           </a>
           <form action="" className="search-form">
             <input id="search-box" type="search" placeholder="search here..." />
@@ -31,22 +31,26 @@ function Nav({ onSidebarToggle }) {
             <Link to='/'>
               <a href="home">Home</a>
             </Link>
-            <Link to='/featured'>
-              <a href="featured">Featured</a>
+            <Link to = '/newarrival'>
+            <a href="newarrival">New Arrival</a>
             </Link>
-            <a href="#reviews">Reviews</a>
-            <a href="#blogs">Blogs</a>
+            <Link to='/features'>
+              <a href="features">Features</a>
+            </Link>
+            <Link to='/topoffers'>
+            <a href="topoffers">Top Offers</a>
+            </Link>
           </div>
         </div>
       </header>
       <div className="bottom-navbar">
-        <a href="#home" className="fas fa-home"></a>
-        <a href="#featured" className="fas fa-list"></a>
-        <a href="#arrivals" className="fas fa-tags"></a>
-        <a href="#blogs" className="fas fa-app-store"></a>
+        <a href="/home" className="fas fa-home"></a>
+        <a href="/newarrivals" className="fas fa-tags"></a>
+        <a href="/featured" className="fas fa-list"></a>
+        <a href="/topoffers" className="fas fa-app-store"></a>
       </div>
     </>
   );
 }
 
-export default Nav;
+export default Navbar;

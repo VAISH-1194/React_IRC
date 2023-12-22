@@ -1,5 +1,5 @@
 Theme: Online Book Store
-Components : Home, Functional Navigation bar, Functional Login, Footer with Icons, Dashboard, Features Page, New Arrival Page.
+Components : Home, Functional Navigation bar, Functional Login, Footer with Icons, Dashboard, Features Page, New Arrival Page, With Logout Function.
 
 
 Home Page:-

@@ -18,6 +18,11 @@ Footer:-
 
 ![Footer](https://github.com/VAISH-1194/React_IRC/assets/125114509/2b162988-e110-409e-929d-edd3708773eb)
 
+Dashboard:-
+
+![Dashboard](https://github.com/VAISH-1194/React_IRC/assets/125114509/d4c6e3cb-ab1a-4d55-b415-95c6d49440c9)
+
+
 Features:-
 
 ![Features](https://github.com/VAISH-1194/React_IRC/assets/125114509/def61955-8f95-4553-a995-50f2559175bb)

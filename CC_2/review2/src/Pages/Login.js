@@ -2,20 +2,40 @@ import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
+import axios from 'axios';
 
 function Login() {
   const [isLoginFormVisible, setLoginFormVisible] = useState(true);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+ 
+  const [cpassword, setcPassword] = useState('');
+
+  const [data, setData] = useState({
+    name : "",
+    email : "",
+    password : ""
+  })
 
   const handleCloseButtonClick = () => {
     setLoginFormVisible(false);
   };
 
+  const handleChange=(e)=>{
+    setData({...data, [e.target.id]: e.target.value})
+  }
+
+ const handleConfirmPasswordChange = (e) =>{
+  setcPassword(e.target.value)
+ }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email === 'vaish1194@gmail.com' && password === '12345') {
+    if (data.password === cpassword) {
+      axios.post("http://localhost:8080/register",data)
+      .then(response =>{
+        console.log("Success" + response);
+
+      })
       toast.success('🥳 Login SuccessFul!', {
         position: "bottom-right",
         autoClose: 5000,
@@ -56,39 +76,80 @@ function Login() {
 
           <form onSubmit={handleSubmit}>
             <h3>sign in</h3>
+            <span>Username</span>
+            <input
+              type="text"
+              id = "name"
+              className="box"
+              placeholder="enter your username"
+              required
+              onChange={handleChange}
+            />
+
             <span>email</span>
             <input
               type="email"
+              id = "email"
               className="box"
               placeholder="enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              required
+              onChange={handleChange}
             />
 
             <span>password</span>
             <input
               type="password"
+              id = "password"
               className="box"
               placeholder="enter your password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              required
+              onChange={handleChange}
             />
 
+            <span>confirm password</span>
+            <input
+              type="password"
+              className="box"
+              placeholder="confirm password"
+              required
+              onChange={handleConfirmPasswordChange}
+            />
+
+            
+            <input type="submit" value="sign in" className="btn" />
+            
+            {/*
+            
             <div className="check-box">
               <input type="checkbox" id="remember-me" />
               <label htmlFor="remember-me">remember me</label>
             </div>
 
-            <input type="submit" value="sign in" className="btn" />
-            <p>
-              forgot password? <a href="">click here</a>
-            </p>
 
-            <Link to='/login'>
+
+      //       <p>
+      //         forgot password? <a href="">click here</a>
+      //       </p>
+            
+      //       <Link to='/login'>
+      //         <p>
+      //           don't have an account ? <a href="">SignUp</a>
+      //         </p>
+      // </Link> 
+
+
+            <p>
+              forgot password? <Link to="/forgot-password">click here</Link>
+            </p>
+            <Link to="/signup">
               <p>
-                don't have an account ? <a href="">SignUp</a>
+                don't have an account? <span>SignUp</span>
               </p>
             </Link>
+
+    */}
+
+    
           </form>
         </div>
       )}

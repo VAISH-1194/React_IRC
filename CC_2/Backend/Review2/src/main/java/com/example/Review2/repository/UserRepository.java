@@ -1,8 +1,11 @@
-package com.Review1.SB.repository;
+package com.example.Review2.repository;
+
 
 import java.util.Optional;
 
-import com.Review1.SB.model.User;
+import java.util.Optional;
+
+import com.example.Review2.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, String> {

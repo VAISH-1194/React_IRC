@@ -8,6 +8,7 @@ import Home from './Pages/Home.js';
 import Login from './Pages/Login.js';
 import Features from './Pages/Featured.js';
 import NewArrival from './Pages/NewArrival.jsx';
+import Footer from './Pages/Footer.js';
 
 const App = () => {
   return (
@@ -16,18 +17,19 @@ const App = () => {
 
     <Navbar/>
       <Sidebar>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/newarrival" element={<NewArrival />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/product" element={<Product />} />
-        </Routes>
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/features" element={<Features />} />
+      <Route path="/newarrival" element={<NewArrival />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/product" element={<Product />} />
+      </Routes>
       </Sidebar>
-    </BrowserRouter>
-    </React.StrictMode>
-  );
+      </BrowserRouter>
+      
+      </React.StrictMode>
+      );
 };
 
 export default App;

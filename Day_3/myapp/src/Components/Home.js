@@ -3,6 +3,7 @@ function Home()
 {
     return(
         <> 
+        
             <section class="hero-section">
         <div class="carousel-container">
           <div class="carousel-slide">
@@ -92,6 +93,8 @@ function Home()
     </div>
 </footer>
       
+
+
         </>
     )
 }
